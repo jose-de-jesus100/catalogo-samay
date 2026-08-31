@@ -6,7 +6,7 @@ export const CONFIG: Config = {
     negocio: "Desayunos y arreglos sorpresa SAMAY",
     descripcion:
       "Desayunos sorpresa entregados a domicilio, para personas que tienen poco tiempo de crearlos, Autlán de Navarro, Jalisco",
-    logo: undefined, // pon "/logo.png" cuando subas tu logo a la carpeta public
+    logo: "/logo.png",
     primario: "#be185d",
     secundario: "#7c3aed",
     fondo: "claro",
