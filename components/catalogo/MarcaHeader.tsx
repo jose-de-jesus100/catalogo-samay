@@ -1,7 +1,7 @@
 import { Icon } from "@/components/ui/Icon";
 import { CONFIG } from "@/lib/config";
 
-/** Encabezado del catálogo: logo o nombre, una línea de qué haces, y el sello 24/7. */
+/** Encabezado del catálogo: logo (si hay) + nombre, una línea de qué haces, y el sello 24/7. */
 export function MarcaHeader() {
   const { marca } = CONFIG;
   return (
@@ -11,14 +11,15 @@ export function MarcaHeader() {
         Catálogo disponible 24/7
       </span>
 
-      {marca.logo ? (
-        // eslint-disable-next-line @next/next/no-img-element
-        <img src={marca.logo} alt={marca.negocio} className="h-16 w-auto object-contain" />
-      ) : (
+      <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+        {marca.logo && (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img src={marca.logo} alt={marca.negocio} className="h-80 w-auto object-contain" />
+        )}
         <h1 className="font-display text-5xl font-semibold text-gradient-marca sm:text-6xl">
           {marca.negocio}
         </h1>
-      )}
+      </div>
 
       <p className="max-w-xl text-lg text-ink-soft">{marca.descripcion}</p>
 
