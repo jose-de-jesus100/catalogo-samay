@@ -82,6 +82,25 @@ export const PRODUCTOS: Producto[] = [
     facilidades:
       "Pago en efectivo o transferencia. El envío se cobra aparte según el lugar de entrega.",
   },
+  {
+    slug: "desayuno-clavel",
+    nombre: "Desayuno Clavel",
+    imagen: "/productos/desayuno-clavel.jpg",
+    categoria: "Cumpleaños",
+    caracteristicas: [
+      "Jugo",
+      "Café",
+      "1 flor",
+      "Waffles c/Fruta",
+      "Baguette jamón (pollo $20.+)",
+    ],
+    variantesPrecio: [
+      { etiqueta: "Caja de cartón", precio: "$470.00" },
+      { etiqueta: "Base de madera", precio: "$550" },
+    ],
+    facilidades:
+      "Pago en efectivo o transferencia. El envío se cobra aparte según el lugar de entrega.",
+  },
 ];
 
 export function productoPorSlug(slug: string): Producto | undefined {
