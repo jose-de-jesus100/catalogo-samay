@@ -101,6 +101,24 @@ export const PRODUCTOS: Producto[] = [
     facilidades:
       "Pago en efectivo o transferencia. El envío se cobra aparte según el lugar de entrega.",
   },
+  {
+    slug: "desayuno-jardin-floral",
+    nombre: "Desayuno Jardín Floral",
+    imagen: "/productos/desayuno-jardin-floral.jpg",
+    categoria: "Cumpleaños",
+    caracteristicas: [
+      "Base de madera",
+      "Flores variadas (cambia precio según temporada o flor seleccionada) 🌷",
+      "Jugo de naranja / verde",
+      "Galleta decorativa",
+      "Waffles c/fruta",
+      "Gelatina c/fruta según disponible",
+      "Baguette de pollo",
+    ],
+    precio: "$1180",
+    facilidades:
+      "Pago en efectivo o transferencia. El envío se cobra aparte según el lugar de entrega.",
+  },
 ];
 
 export function productoPorSlug(slug: string): Producto | undefined {
