@@ -73,9 +73,9 @@ export function ProductoCard({ producto, vendedorSlug }: ProductoCardProps) {
           <p className="text-[15px] leading-snug text-ink">{producto.beneficio}</p>
         )}
 
-        {/* Las 3 que importan */}
+        {/* Las que importan */}
         <ul className="mt-1 flex flex-col gap-1.5">
-          {producto.caracteristicas.slice(0, 3).map((c) => (
+          {producto.caracteristicas.map((c) => (
             <li key={c} className="flex items-start gap-2 text-sm text-ink-soft">
               <Icon name="lucide:check" size={16} className="mt-0.5 shrink-0 text-marca" />
               {c}
