@@ -75,7 +75,10 @@ export const PRODUCTOS: Producto[] = [
       "Jugo",
       "Sandwich jamón (pollo $20. +)",
     ],
-    precio: "Base de cartón 35x25cm.: $730 · Base de madera: $820",
+    variantesPrecio: [
+      { etiqueta: "Base de cartón 35x25cm.", precio: "$730" },
+      { etiqueta: "Base de madera 30x300cm.", precio: "$820" },
+    ],
     facilidades:
       "Pago en efectivo o transferencia. El envío se cobra aparte según el lugar de entrega.",
   },

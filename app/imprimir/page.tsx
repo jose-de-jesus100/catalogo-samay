@@ -37,9 +37,21 @@ export default function Imprimir() {
               {p.beneficio && (
                 <p className="mt-1 text-xs text-ink-soft line-clamp-2">{p.beneficio}</p>
               )}
-              <div className="mt-auto flex items-baseline gap-2 pt-2">
-                {p.precioAntes && <span className="text-xs text-ink-mute line-through">{p.precioAntes}</span>}
-                <span className="font-display text-xl font-semibold">{p.precio}</span>
+              <div className="mt-auto pt-2">
+                {p.variantesPrecio ? (
+                  <div className="flex flex-col gap-0.5">
+                    {p.variantesPrecio.map((v) => (
+                      <p key={v.etiqueta} className="text-xs text-ink">
+                        {v.etiqueta} <span className="font-display text-base font-semibold">{v.precio}</span>
+                      </p>
+                    ))}
+                  </div>
+                ) : (
+                  <div className="flex items-baseline gap-2">
+                    {p.precioAntes && <span className="text-xs text-ink-mute line-through">{p.precioAntes}</span>}
+                    <span className="font-display text-xl font-semibold">{p.precio}</span>
+                  </div>
+                )}
               </div>
             </div>
           </article>

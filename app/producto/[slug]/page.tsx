@@ -87,10 +87,23 @@ export default async function FichaProducto({
             </div>
           )}
 
-          <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 pt-2">
-            {producto.precioAntes && <span className="text-lg text-ink-mute line-through">{producto.precioAntes}</span>}
-            <span className="font-display text-4xl font-semibold">{producto.precio}</span>
-            {producto.facilidades && <span className="text-ink-soft">· {producto.facilidades}</span>}
+          <div className="pt-2">
+            {producto.variantesPrecio ? (
+              <div className="flex flex-col gap-1.5">
+                {producto.variantesPrecio.map((v) => (
+                  <p key={v.etiqueta} className="text-lg text-ink">
+                    {v.etiqueta} <span className="font-display text-2xl font-semibold">{v.precio}</span>
+                  </p>
+                ))}
+                {producto.facilidades && <p className="text-ink-soft">{producto.facilidades}</p>}
+              </div>
+            ) : (
+              <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+                {producto.precioAntes && <span className="text-lg text-ink-mute line-through">{producto.precioAntes}</span>}
+                <span className="font-display text-4xl font-semibold">{producto.precio}</span>
+                {producto.facilidades && <span className="text-ink-soft">· {producto.facilidades}</span>}
+              </div>
+            )}
           </div>
 
           <a href={href} target="_blank" rel="noopener noreferrer" className="btn-marca btn-wa mt-2 w-full sm:w-auto">

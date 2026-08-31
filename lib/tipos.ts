@@ -71,9 +71,11 @@ export interface Producto {
   /** Máximo 3 datos que SÍ importan (choice overload, Iyengar). */
   caracteristicas: string[];
   /** Precio actual, ya con símbolo (ej. "$450"). */
-  precio: string;
+  precio?: string;
   /** Precio antes / de lista, para anclar (Ariely). Opcional. */
   precioAntes?: string;
+  /** Variantes de precio (ej. distintas bases/tamaños), cada una con su etiqueta y precio. Si se usa, reemplaza a `precio`. Opcional. */
+  variantesPrecio?: { etiqueta: string; precio: string }[];
   /** Facilidades de pago (ej. "o 3 pagos de $150"). Opcional. */
   facilidades?: string;
   /** El bono / lo que incluye además (Hormozi). Opcional. */

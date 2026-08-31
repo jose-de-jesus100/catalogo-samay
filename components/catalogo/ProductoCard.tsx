@@ -110,13 +110,28 @@ export function ProductoCard({ producto, vendedorSlug }: ProductoCardProps) {
         )}
 
         {/* Precio con ancla + facilidades */}
-        <div className="mt-auto flex flex-wrap items-baseline gap-x-2 gap-y-1 pt-2">
-          {producto.precioAntes && (
-            <span className="text-sm text-ink-mute line-through">{producto.precioAntes}</span>
-          )}
-          <span className="font-display text-3xl font-semibold text-ink">{producto.precio}</span>
-          {producto.facilidades && (
-            <span className="text-sm text-ink-soft">· {producto.facilidades}</span>
+        <div className="mt-auto pt-2">
+          {producto.variantesPrecio ? (
+            <div className="flex flex-col gap-1">
+              {producto.variantesPrecio.map((v) => (
+                <p key={v.etiqueta} className="text-base text-ink">
+                  {v.etiqueta} <span className="font-display text-xl font-semibold">{v.precio}</span>
+                </p>
+              ))}
+              {producto.facilidades && (
+                <p className="text-sm text-ink-soft">{producto.facilidades}</p>
+              )}
+            </div>
+          ) : (
+            <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1">
+              {producto.precioAntes && (
+                <span className="text-sm text-ink-mute line-through">{producto.precioAntes}</span>
+              )}
+              <span className="font-display text-3xl font-semibold text-ink">{producto.precio}</span>
+              {producto.facilidades && (
+                <span className="text-sm text-ink-soft">· {producto.facilidades}</span>
+              )}
+            </div>
           )}
         </div>
 
