@@ -3,15 +3,26 @@ import "./globals.css";
 import { CONFIG } from "@/lib/config";
 import { estiloMarca, claseTema } from "@/lib/marca";
 
+const sitioActual = process.env.VERCEL_URL
+  ? `https://${process.env.VERCEL_URL}`
+  : "http://localhost:3000";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://catalogo-vivo-gilt.vercel.app"),
+  metadataBase: new URL(sitioActual),
   title: `${CONFIG.marca.negocio} · Catálogo`,
   description: CONFIG.marca.descripcion,
   openGraph: {
     title: `${CONFIG.marca.negocio} · Catálogo`,
     description: CONFIG.marca.descripcion,
     type: "website",
-    images: [{ url: "/productos/vela.jpg", width: 1024, height: 1024, alt: CONFIG.marca.negocio }],
+    images: [
+      {
+        url: CONFIG.marca.logo ?? "/productos/desayuno-sorpresa-con-amor.jpg",
+        width: 500,
+        height: 500,
+        alt: CONFIG.marca.negocio,
+      },
+    ],
   },
 };
 
