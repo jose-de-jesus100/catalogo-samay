@@ -74,11 +74,10 @@ export const PRODUCTOS: Producto[] = [
       "Gelatina",
       "Jugo",
       "Sandwich jamón (pollo $20. +)",
-      "Base de cartón 35x25cm.",
     ],
-    precio: "$730",
+    precio: "Base de cartón 35x25cm.: $730 · Base de madera: $820",
     facilidades:
-      "Pago en efectivo o transferencia. El envío se cobra aparte según el lugar de entrega. Con base de madera: $820.",
+      "Pago en efectivo o transferencia. El envío se cobra aparte según el lugar de entrega.",
   },
 ];
 
