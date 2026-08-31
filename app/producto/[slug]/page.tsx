@@ -55,10 +55,14 @@ export default async function FichaProducto({
         <div className="flex flex-col gap-4">
           <p className="text-sm font-semibold uppercase tracking-wide text-marca">{producto.categoria}</p>
           <h1 className="font-display text-4xl font-semibold leading-tight sm:text-5xl">{producto.nombre}</h1>
-          <p className="text-lg text-ink-soft">
-            <span className="font-semibold text-ink">Para</span> {producto.paraQuien.replace(/^para\s+/i, "")}
-          </p>
-          <p className="text-xl leading-snug text-ink">{producto.beneficio}</p>
+          {producto.paraQuien && (
+            <p className="text-lg text-ink-soft">
+              <span className="font-semibold text-ink">Para</span> {producto.paraQuien.replace(/^para\s+/i, "")}
+            </p>
+          )}
+          {producto.beneficio && (
+            <p className="text-xl leading-snug text-ink">{producto.beneficio}</p>
+          )}
 
           <ul className="flex flex-col gap-2">
             {producto.caracteristicas.map((c) => (

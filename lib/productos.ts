@@ -61,6 +61,25 @@ export const PRODUCTOS: Producto[] = [
       "Pago en efectivo o transferencia. El envío se cobra aparte según el lugar de entrega.",
     destacado: true,
   },
+  {
+    slug: "desayuno-feliz-cumpleanos",
+    nombre: "Desayuno Feliz Cumpleaños",
+    imagen: "/productos/desayuno-feliz-cumpleanos.jpg",
+    categoria: "Cumpleaños",
+    caracteristicas: [
+      "Globo",
+      "2 rosas",
+      "Waffles",
+      "Fruta",
+      "Gelatina",
+      "Jugo",
+      "Sandwich jamón (pollo $20. +)",
+      "Base de cartón 35x25cm.",
+    ],
+    precio: "$730",
+    facilidades:
+      "Pago en efectivo o transferencia. El envío se cobra aparte según el lugar de entrega. Con base de madera: $820.",
+  },
 ];
 
 export function productoPorSlug(slug: string): Producto | undefined {

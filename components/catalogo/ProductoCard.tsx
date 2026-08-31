@@ -61,13 +61,17 @@ export function ProductoCard({ producto, vendedorSlug }: ProductoCardProps) {
         <p className="text-xs font-semibold uppercase tracking-wide text-marca">{producto.categoria}</p>
         <h3 className="font-display text-2xl leading-tight">{producto.nombre}</h3>
 
-        {/* Para quién es (el "trabajo" que resuelve) */}
-        <p className="text-sm text-ink-soft">
-          <span className="font-semibold text-ink">Para</span> {quitarPara(producto.paraQuien)}
-        </p>
+        {/* Para quién es (el "trabajo" que resuelve), si aplica */}
+        {producto.paraQuien && (
+          <p className="text-sm text-ink-soft">
+            <span className="font-semibold text-ink">Para</span> {quitarPara(producto.paraQuien)}
+          </p>
+        )}
 
-        {/* El beneficio, en resultado */}
-        <p className="text-[15px] leading-snug text-ink">{producto.beneficio}</p>
+        {/* El beneficio, en resultado, si aplica */}
+        {producto.beneficio && (
+          <p className="text-[15px] leading-snug text-ink">{producto.beneficio}</p>
+        )}
 
         {/* Las 3 que importan */}
         <ul className="mt-1 flex flex-col gap-1.5">

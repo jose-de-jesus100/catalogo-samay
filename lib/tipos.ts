@@ -65,9 +65,9 @@ export interface Producto {
    * Para quién es y qué "trabajo" le resuelve (Jobs-to-be-done, Christensen).
    * Ej.: "Para el que quiere un regalo que se vea caro sin gastar de más".
    */
-  paraQuien: string;
+  paraQuien?: string;
   /** El beneficio principal, en resultado, no en característica (StoryBrand). */
-  beneficio: string;
+  beneficio?: string;
   /** Máximo 3 datos que SÍ importan (choice overload, Iyengar). */
   caracteristicas: string[];
   /** Precio actual, ya con símbolo (ej. "$450"). */
