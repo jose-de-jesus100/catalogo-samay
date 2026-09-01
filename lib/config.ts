@@ -19,5 +19,5 @@ export const CONFIG: Config = {
   ],
   categorias: ["Cumpleaños", "Aniversario", "Reconciliación", "Buen día"],
   mensajePlantilla:
-    "{saludo}vi tu catálogo y me interesa {producto}. ¿Me pueden dar más información y precio?",
+    "{saludo}vi tu catálogo y me interesa {producto}. ¡Quiero comprarlo!",
 };
