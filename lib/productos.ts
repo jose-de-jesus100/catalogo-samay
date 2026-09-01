@@ -16,7 +16,7 @@ export const PRODUCTOS: Producto[] = [
     categoria: "Cumpleaños",
     paraQuien: "Para la persona que quiere impresionar a alguien.",
     beneficio: "La seguridad de que el desayuno llegará bien a su destino.",
-    caracteristicas: ["Personalizado", "Se entrega a domicilio", "Producto fresco"],
+    caracteristicas: ["Se entrega a domicilio", "Personalizado", "Producto fresco"],
     precio: "$630",
     facilidades:
       "Pago en efectivo o transferencia. El envío se cobra aparte según el lugar de entrega.",
@@ -28,7 +28,7 @@ export const PRODUCTOS: Producto[] = [
     categoria: "Aniversario",
     paraQuien: "Para la persona que quiere impresionar a alguien.",
     beneficio: "La seguridad de que el desayuno llegará bien a su destino.",
-    caracteristicas: ["Personalizado", "Se entrega a domicilio", "Producto fresco"],
+    caracteristicas: ["Se entrega a domicilio", "Personalizado", "Producto fresco"],
     precio: "$630",
     facilidades:
       "Pago en efectivo o transferencia. El envío se cobra aparte según el lugar de entrega.",
@@ -41,7 +41,7 @@ export const PRODUCTOS: Producto[] = [
     categoria: "Reconciliación",
     paraQuien: "Para la persona que quiere impresionar a alguien.",
     beneficio: "La seguridad de que el desayuno llegará bien a su destino.",
-    caracteristicas: ["Personalizado", "Se entrega a domicilio", "Producto fresco"],
+    caracteristicas: ["Se entrega a domicilio", "Personalizado", "Producto fresco"],
     precio: "$630",
     facilidades:
       "Pago en efectivo o transferencia. El envío se cobra aparte según el lugar de entrega.",
@@ -54,7 +54,7 @@ export const PRODUCTOS: Producto[] = [
     categoria: "Buen día",
     paraQuien: "Para la persona que quiere impresionar a alguien.",
     beneficio: "La seguridad de que el desayuno llegará bien a su destino.",
-    caracteristicas: ["Personalizado", "Se entrega a domicilio", "Producto fresco"],
+    caracteristicas: ["Se entrega a domicilio", "Personalizado", "Producto fresco"],
     precio: "$630",
     facilidades:
       "Pago en efectivo o transferencia. El envío se cobra aparte según el lugar de entrega.",
@@ -66,6 +66,7 @@ export const PRODUCTOS: Producto[] = [
     imagen: "/productos/desayuno-feliz-cumpleanos.jpg",
     categoria: "Cumpleaños",
     caracteristicas: [
+      "Se entrega a domicilio",
       "Globo",
       "2 rosas",
       "Waffles",
@@ -87,6 +88,7 @@ export const PRODUCTOS: Producto[] = [
     imagen: "/productos/desayuno-clavel.jpg",
     categoria: "Cumpleaños",
     caracteristicas: [
+      "Se entrega a domicilio",
       "Jugo",
       "Café",
       "1 flor",
@@ -106,6 +108,7 @@ export const PRODUCTOS: Producto[] = [
     imagen: "/productos/desayuno-jardin-floral.jpg",
     categoria: "Cumpleaños",
     caracteristicas: [
+      "Se entrega a domicilio",
       "Base de madera",
       "Flores variadas (cambia precio según temporada o flor seleccionada) 🌷",
       "Jugo de naranja / verde",
