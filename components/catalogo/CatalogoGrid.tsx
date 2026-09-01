@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { ProductoCard } from "./ProductoCard";
 import { CONFIG } from "@/lib/config";
-import { PRODUCTOS } from "@/lib/productos";
+import { PRODUCTOS, valorProducto } from "@/lib/productos";
 
 /** Cuántos productos se muestran por categoría antes de "ver más" (Iyengar). */
 const TOPE_POR_CATEGORIA = 6;
@@ -51,7 +51,7 @@ export function CatalogoGrid({ vendedorSlug }: CatalogoGridProps) {
       <div className="flex flex-col gap-14">
         {visibles.map((cat) => {
           const items = PRODUCTOS.filter((p) => p.categoria === cat).sort(
-            (a, b) => Number(b.destacado ?? false) - Number(a.destacado ?? false)
+            (a, b) => valorProducto(b) - valorProducto(a)
           );
           if (items.length === 0) return null;
           const abierta = expandidas[cat];

@@ -127,3 +127,12 @@ export const PRODUCTOS: Producto[] = [
 export function productoPorSlug(slug: string): Producto | undefined {
   return PRODUCTOS.find((p) => p.slug === slug);
 }
+
+/** Valor numérico de un producto (el más alto si tiene variantes de precio), para ordenar por precio. */
+export function valorProducto(p: Producto): number {
+  const precios = p.variantesPrecio
+    ? p.variantesPrecio.map((v) => v.precio)
+    : [p.precio ?? "0"];
+  const numeros = precios.map((texto) => parseFloat(texto.replace(/[^0-9.]/g, "")) || 0);
+  return Math.max(...numeros);
+}
