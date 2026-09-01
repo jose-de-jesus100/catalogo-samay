@@ -36,6 +36,15 @@ export function resolverVendedor(
   return config.vendedores.find((v) => v.slug === vendedorSlug) ?? null;
 }
 
+/**
+ * Si nadie trajo un vendedor referido (?v=slug), el saludo igual nombra a
+ * quien contesta: el vendedor cuyo WhatsApp es el número principal del negocio.
+ * Así "Hola, " nunca sale genérico cuando ese vendedor existe en la lista.
+ */
+function vendedorPrincipal(config: Config): Vendedor | undefined {
+  return config.vendedores.find((v) => v.whatsapp === config.marca.whatsappPrincipal);
+}
+
 /** La liga final de "Lo quiero" para un producto, respetando el vendedor referido. */
 export function linkLoQuiero(
   config: Config,
@@ -44,10 +53,11 @@ export function linkLoQuiero(
 ): string {
   const vendedor = resolverVendedor(config, vendedorSlug);
   const numero = vendedor ? vendedor.whatsapp : config.marca.whatsappPrincipal;
+  const nombreParaSaludo = vendedor ?? vendedorPrincipal(config);
   const mensaje = construirMensaje(
     config.mensajePlantilla,
     producto.nombre,
-    vendedor?.nombre.split(" ")[0]
+    nombreParaSaludo?.nombre.split(" ")[0]
   );
   return linkWhatsApp(numero, mensaje);
 }
