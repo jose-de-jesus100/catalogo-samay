@@ -16,7 +16,7 @@ export function MarcaHeader() {
           // eslint-disable-next-line @next/next/no-img-element
           <img src={marca.logo} alt={marca.negocio} className="h-80 w-auto object-contain" />
         )}
-        <h1 className="font-display text-5xl font-semibold text-gradient-marca sm:text-6xl">
+        <h1 className="font-display text-5xl font-semibold text-marca sm:text-6xl">
           {marca.negocio}
         </h1>
       </div>

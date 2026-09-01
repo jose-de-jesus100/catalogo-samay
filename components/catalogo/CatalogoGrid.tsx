@@ -38,7 +38,7 @@ export function CatalogoGrid({ vendedorSlug }: CatalogoGridProps) {
               style={
                 activa
                   ? { background: "var(--marca)", color: "#fff", borderColor: "var(--marca)" }
-                  : { borderColor: "var(--line-strong)", color: "var(--ink-soft)" }
+                  : { borderColor: "var(--line-strong)", color: "var(--marca)" }
               }
             >
               {cat}
