@@ -33,14 +33,9 @@ export function ProductoCard({ producto, vendedorSlug }: ProductoCardProps) {
       {/* Foto + etiquetas */}
       <div className="relative">
         <FotoProducto src={producto.imagen} alt={producto.nombre} className="aspect-square" />
-        <div className="absolute inset-x-3 top-3 flex items-start justify-between gap-2">
-          {producto.destacado && (
-            <span className="chip chip-destacado no-print">
-              <Icon name="fluent-emoji-flat:star" size={14} /> El más pedido
-            </span>
-          )}
+        <div className="absolute inset-x-3 top-3 flex items-start justify-end gap-2">
           {producto.escasez && (
-            <span className="chip chip-escasez ml-auto no-print">
+            <span className="chip chip-escasez no-print">
               <Icon
                 name={
                   producto.escasez.tipo === "tiempo"
@@ -59,6 +54,11 @@ export function ProductoCard({ producto, vendedorSlug }: ProductoCardProps) {
       {/* Cuerpo de la ficha */}
       <div className="flex flex-1 flex-col gap-3 p-5">
         <p className="text-xs font-semibold uppercase tracking-wide text-marca">{producto.categoria}</p>
+        {producto.destacado && (
+          <span className="chip chip-destacado no-print w-fit">
+            <Icon name="fluent-emoji-flat:star" size={14} /> El más pedido
+          </span>
+        )}
         <h3 className="font-display text-2xl leading-tight">{producto.nombre}</h3>
 
         {/* Para quién es (el "trabajo" que resuelve), si aplica */}
