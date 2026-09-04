@@ -5,7 +5,7 @@ export const CONFIG: Config = {
   marca: {
     negocio: "Desayunos y arreglos sorpresa SAMAY",
     descripcion:
-      "Desayunos sorpresa entregados a domicilio, para personas que tienen poco tiempo de crearlos, Autlán de Navarro, Jalisco",
+      "Desayunos sorpresa entregados a domicilio, creados para sorprender a tu persona favorita, Autlán de Navarro, Jalisco",
     logo: "/logo.png",
     primario: "#be185d",
     secundario: "#7c3aed",
