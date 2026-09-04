@@ -73,7 +73,7 @@ export const PRODUCTOS: Producto[] = [
     slug: "desayuno-mi-amor",
     nombre: "Desayuno Mi Amor",
     imagen: "/productos/desayuno-mi-amor.jpg",
-    categoria: "Buen día",
+    categoria: "Aniversario",
     caracteristicas: [
       "Se entrega a domicilio",
       "Base de madera",
@@ -94,7 +94,7 @@ export const PRODUCTOS: Producto[] = [
     slug: "desayuno-mi-persona-favorita",
     nombre: "Desayuno Mi Persona Favorita",
     imagen: "/productos/desayuno-mi-persona-favorita.jpg",
-    categoria: "Buen día",
+    categoria: "Aniversario",
     caracteristicas: [
       "Se entrega a domicilio",
       "Arreglo floral",
@@ -114,7 +114,7 @@ export const PRODUCTOS: Producto[] = [
     slug: "desayuno-rosas-amor",
     nombre: "Desayuno Rosas Amor",
     imagen: "/productos/desayuno-rosas-amor.jpg",
-    categoria: "Buen día",
+    categoria: "Aniversario",
     caracteristicas: [
       "Se entrega a domicilio",
       "Arreglo floral 12 rosas",
@@ -134,7 +134,7 @@ export const PRODUCTOS: Producto[] = [
     slug: "desayuno-fit-amor",
     nombre: "Desayuno Fit Amor",
     imagen: "/productos/desayuno-fit-amor.jpg",
-    categoria: "Buen día",
+    categoria: "Aniversario",
     caracteristicas: [
       "Se entrega a domicilio",
       "Jugo verde",
@@ -153,7 +153,7 @@ export const PRODUCTOS: Producto[] = [
     slug: "caja-de-carton-con-tapa",
     nombre: "Caja de Cartón con Tapa",
     imagen: "/productos/caja-de-carton-con-tapa.jpg",
-    categoria: "Buen día",
+    categoria: "Aniversario",
     caracteristicas: [
       "Se entrega a domicilio",
       "Fruta",
