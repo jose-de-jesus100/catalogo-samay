@@ -170,6 +170,128 @@ export const PRODUCTOS: Producto[] = [
     facilidades:
       "Pago en efectivo o transferencia. El envío se cobra aparte según el lugar de entrega.",
   },
+  {
+    slug: "desayuno-pliis-me-perdonas",
+    nombre: "Desayuno Pliis Me Perdonas",
+    imagen: "/productos/desayuno-pliis-me-perdonas.jpg",
+    categoria: "Reconciliación",
+    caracteristicas: [
+      "Se entrega a domicilio",
+      "Caja de cartón con tapa y mensaje",
+      "Jugo",
+      "Waffles",
+      "Fruta",
+      "Yogurth",
+      "Arreglo de flores",
+    ],
+    precio: "$640",
+    facilidades:
+      "Pago en efectivo o transferencia. El envío se cobra aparte según el lugar de entrega.",
+  },
+  {
+    slug: "caja-de-madera-con-mnsj",
+    nombre: "Caja de Madera con Mensaje",
+    imagen: "/productos/caja-de-madera-con-mnsj.jpg",
+    categoria: "Reconciliación",
+    caracteristicas: [
+      "Se entrega a domicilio",
+      "Botella 1800 añejo",
+      "8 ferreros",
+      "Caballito",
+      "Frasco con pistache",
+    ],
+    precio: "$1480",
+    facilidades:
+      "Pago en efectivo o transferencia. El envío se cobra aparte según el lugar de entrega.",
+  },
+  {
+    slug: "despertar-amor",
+    nombre: "Despertar Amor",
+    imagen: "/productos/despertar-amor.jpg",
+    categoria: "Buen día",
+    caracteristicas: [
+      "Se entrega a domicilio",
+      "Arreglo chico de flores",
+      "Waffles",
+      "Fruta",
+      "Sandwich de jamón",
+      "Jugo de naranja",
+    ],
+    precio: "$570",
+    facilidades:
+      "Pago en efectivo o transferencia. El envío se cobra aparte según el lugar de entrega.",
+  },
+  {
+    slug: "wuafles-con-fruta",
+    nombre: "Waffles con Fruta",
+    imagen: "/productos/wuafles-con-fruta.jpg",
+    categoria: "Buen día",
+    caracteristicas: [
+      "Se entrega a domicilio",
+      "Waffles",
+      "Jugo",
+      "Gelatina",
+      "Sandwich de jamón (pollo $20 +)",
+    ],
+    precio: "$520",
+    facilidades:
+      "Pago en efectivo o transferencia. El envío se cobra aparte según el lugar de entrega.",
+  },
+  {
+    slug: "desayuno-amanecer",
+    nombre: "Desayuno Amanecer",
+    imagen: "/productos/desayuno-amanecer.jpg",
+    categoria: "Buen día",
+    caracteristicas: [
+      "Se entrega a domicilio",
+      "Arreglo de flores",
+      "Barra de chocolate",
+      "Yogurth c/granola",
+      "Jugo de naranja",
+      "Hamburguesa",
+      "Fruta",
+    ],
+    precio: "$650",
+    facilidades:
+      "Pago en efectivo o transferencia. El envío se cobra aparte según el lugar de entrega.",
+  },
+  {
+    slug: "desayuno-tacita-con-pan",
+    nombre: "Desayuno Tacita con Pan",
+    imagen: "/productos/desayuno-tacita-con-pan.jpg",
+    categoria: "Buen día",
+    caracteristicas: [
+      "Se entrega a domicilio",
+      "Pieza de pan",
+      "Café",
+      "Taza",
+      "Chocolate",
+      "Fruta",
+      "Baguette de pollo",
+      "1 rosa",
+      "1 globo de helio",
+    ],
+    precio: "$720",
+    facilidades:
+      "Pago en efectivo o transferencia. El envío se cobra aparte según el lugar de entrega.",
+  },
+  {
+    slug: "taza-con-flores",
+    nombre: "Taza con Flores",
+    imagen: "/productos/taza-con-flores.jpg",
+    categoria: "Buen día",
+    caracteristicas: [
+      "Se entrega a domicilio",
+      "Jugo",
+      "Fruta",
+      "Galleta decorada",
+      "Gelatina",
+      "Baguette de pollo",
+    ],
+    precio: "$760",
+    facilidades:
+      "Pago en efectivo o transferencia. El envío se cobra aparte según el lugar de entrega.",
+  },
 ];
 
 export function productoPorSlug(slug: string): Producto | undefined {
