@@ -292,6 +292,58 @@ export const PRODUCTOS: Producto[] = [
     facilidades:
       "Pago en efectivo o transferencia. El envío se cobra aparte según el lugar de entrega.",
   },
+  {
+    slug: "frutero-y-flor",
+    nombre: "Frutero y Flor",
+    imagen: "/productos/frutero-y-flor.jpg",
+    categoria: "Buen día",
+    caracteristicas: [
+      "Se entrega a domicilio",
+      "Canasta de madera",
+      "Fruta seleccionada",
+      "Flor surtida (si quieres una flor especial, dínoslo y se ajusta el precio)",
+    ],
+    precio: "$1080",
+    facilidades:
+      "Pago en efectivo o transferencia. El envío se cobra aparte según el lugar de entrega.",
+  },
+  {
+    slug: "corazon-girasol-fresa",
+    nombre: "Corazón Girasol Fresa",
+    imagen: "/productos/corazon-girasol-fresa.jpg",
+    categoria: "Buen día",
+    caracteristicas: [
+      "Se entrega a domicilio",
+      "Caja de corazón 45cm",
+      "Mensaje en la caja (mínimo 4 palabras)",
+      "9-10 girasoles",
+      "16 ferreros",
+      "12 fresas con chocolate",
+      "Precio aumenta en temporada alta (14 feb, 21 mar, 10 may, 21 sep)",
+    ],
+    precio: "$1890",
+    facilidades:
+      "Pago en efectivo o transferencia. El envío se cobra aparte según el lugar de entrega.",
+  },
+  {
+    slug: "caja-corazon-chocolatero",
+    nombre: "Caja Corazón Chocolatero",
+    imagen: "/productos/caja-corazon-chocolatero.jpg",
+    categoria: "Buen día",
+    caracteristicas: [
+      "Se entrega a domicilio",
+      "Caja de madera 40cm",
+      "Mensaje seleccionado (4 palabras)",
+      "7-8 girasoles",
+      "16 ferreros",
+      "4 barras de Hershey's",
+      "4 Milky Way",
+      "Precio aumenta en temporada alta",
+    ],
+    precio: "$1850",
+    facilidades:
+      "Pago en efectivo o transferencia. El envío se cobra aparte según el lugar de entrega.",
+  },
 ];
 
 export function productoPorSlug(slug: string): Producto | undefined {
