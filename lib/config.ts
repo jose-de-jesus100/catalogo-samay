@@ -17,7 +17,7 @@ export const CONFIG: Config = {
   vendedores: [
     { slug: "maira", nombre: "Maira", whatsapp: "5213171004240" },
   ],
-  categorias: ["Cumpleaños", "Aniversario", "Reconciliación", "Buen día"],
+  categorias: ["Cumpleaños", "Buen día", "Aniversario", "Reconciliación"],
   mensajePlantilla:
     "{saludo}vi tu catálogo y me interesa {producto}. ¡Quiero comprarlo!",
 };
