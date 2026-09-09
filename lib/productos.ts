@@ -89,6 +89,7 @@ export const PRODUCTOS: Producto[] = [
     precio: "$2450",
     facilidades:
       "Pago en efectivo o transferencia. El envío se cobra aparte según el lugar de entrega.",
+    destacado: true,
   },
   {
     slug: "desayuno-mi-persona-favorita",
@@ -203,6 +204,7 @@ export const PRODUCTOS: Producto[] = [
     precio: "$1480",
     facilidades:
       "Pago en efectivo o transferencia. El envío se cobra aparte según el lugar de entrega.",
+    destacado: true,
   },
   {
     slug: "despertar-amor",
