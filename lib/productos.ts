@@ -324,6 +324,7 @@ export const PRODUCTOS: Producto[] = [
     precio: "$1890",
     facilidades:
       "Pago en efectivo o transferencia. El envío se cobra aparte según el lugar de entrega.",
+    destacado: true,
   },
   {
     slug: "caja-corazon-chocolatero",
